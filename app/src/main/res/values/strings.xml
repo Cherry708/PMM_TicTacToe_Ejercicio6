@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PMM_TicTacToe_Ejercicio6</string>
+    <string name="turno_x">Turno de X</string>
+    <string name="turno_o">Turno de O</string>
+    <string name="victoria_x">X ha ganado</string>
+    <string name="victoria_o">O ha ganado</string>
+</resources>
