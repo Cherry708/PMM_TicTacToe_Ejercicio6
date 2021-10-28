@@ -15,9 +15,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         var turno = false
-        if (turno) {
-            binding.tvTurno.text = getString(R.string.turno_x)
-        } else binding.tvTurno.text = getString(R.string.turno_o)
 
         val listaBotones = ArrayList<Button>()
 
@@ -30,6 +27,11 @@ class MainActivity : AppCompatActivity() {
         listaBotones.add(binding.btn7)
         listaBotones.add(binding.btn8)
         listaBotones.add(binding.btn9)
+
+        if (turno) {
+            binding.tvTurno.text = getString(R.string.turno_x)
+        } else binding.tvTurno.text = getString(R.string.turno_o)
+
 
         binding.btn1.setOnClickListener {
             if (turno) {
@@ -172,15 +174,15 @@ class MainActivity : AppCompatActivity() {
 
         val tvResultado = findViewById<TextView>(R.id.tvResultado)
 
-        val text1 = listaBotones.get(0).text.toString()
-        val text2 = listaBotones.get(1).text.toString()
-        val text3 = listaBotones.get(2).text.toString()
-        val text4 = listaBotones.get(3).text.toString()
-        val text5 = listaBotones.get(4).text.toString()
-        val text6 = listaBotones.get(5).text.toString()
-        val text7 = listaBotones.get(6).text.toString()
-        val text8 = listaBotones.get(7).text.toString()
-        val text9 = listaBotones.get(8).text.toString()
+        val text1 = listaBotones[0].text.toString()
+        val text2 = listaBotones[1].text.toString()
+        val text3 = listaBotones[2].text.toString()
+        val text4 = listaBotones[3].text.toString()
+        val text5 = listaBotones[4].text.toString()
+        val text6 = listaBotones[5].text.toString()
+        val text7 = listaBotones[6].text.toString()
+        val text8 = listaBotones[7].text.toString()
+        val text9 = listaBotones[8].text.toString()
 
         when {
             //Filas
