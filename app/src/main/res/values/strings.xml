@@ -4,4 +4,5 @@
     <string name="turno_o">Turno de O</string>
     <string name="victoria_x">X ha ganado</string>
     <string name="victoria_o">O ha ganado</string>
+    <string name="sin_ganador">No hay ganador</string>
 </resources>
